@@ -1,0 +1,38 @@
+{
+  "name": "ai-bae",
+  "version": "1.0.0",
+  "description": "BAE Project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "client": "cd client && npm start",
+    "serve": "nodemon app.js",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "cd client && npm run build",
+    "deploy": "npm run build && npm run serve"
+  },
+  "keywords": [
+    "talking avatar",
+    "chatGPT"
+  ],
+  "author": "Tech Alpinist",
+  "license": "ISC",
+  "dependencies": {
+    "@types/socket.io": "^3.0.2",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "concurrently": "^8.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^5.7.5",
+    "openai": "^4.12.4",
+    "socket.io": "^4.7.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

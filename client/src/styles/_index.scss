@@ -1,0 +1,159 @@
+/* Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Fonts */
+@import url('https://fonts.cdnfonts.com/css/satoshi');
+
+/* Variables */
+:root {
+	--midnight-moss2: rgba(5, 5, 5, 0.349);
+	--midnight-moss: rgba(5, 5, 5, 1);
+	--charade: rgba(43, 45, 58, 1);
+	--daisy-bush-2: rgba(82, 22, 149, 0.4);
+	--daisy-bush: rgba(82, 22, 149, 1);
+	--hoki: rgba(98, 128, 165, 1);
+	--dove-gray: rgba(112, 112, 112, 1);
+	--gull-gray-2: rgba(157, 171, 191, 0.239);
+	--gull-gray: rgba(157, 171, 191, 1);
+	--purple-mountains-majesty: rgba(161, 133, 191, 1);
+	--cadet-blue: rgba(165, 178, 196, 1);
+	--pigeon-post: rgba(171, 201, 217, 0.431);
+	--east-side: rgba(175, 151, 202, 1);
+	--mischka: rgba(203, 210, 221, 0.902);
+	--botticelli: rgba(204, 223, 232, 1);
+	--mischka-2: rgba(208, 214, 224, 0.902);
+	--blossom: rgba(213, 180, 201, 0.729);
+	--geyser: rgba(213, 218, 227, 1);
+	--lola: rgba(224, 200, 215, 1);
+	--prim: rgba(232, 226, 240, 1);
+	--athens-gray: rgba(233, 237, 242, 1);
+	--concrete: rgba(243, 243, 243, 1);
+	--white: rgba(255, 255, 255, 1);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	line-height: 1.15;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 50px;
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	}
+	&::-webkit-scrollbar-track {
+		background-color: transparent;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 50px;
+		box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	}
+}
+
+body {
+	font-family: 'Satoshi', sans-serif;
+}
+
+// talk
+  code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+	  monospace;
+  }
+  
+  .bar-container {
+	display: flex;
+	float: right;
+	margin-left: 10px;
+	justify-content: space-between;
+	width: 30px;
+	height: 80px;
+  }
+  
+  .bar {
+	width: 20%;
+	height: 0;
+	background-color: #759DEC;
+	border-radius: 5px;
+  }
+  
+  .middle {
+	height: 0;
+  }
+  
+  .shadow-box {
+	box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.7), 10px 10px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 4vh;
+  }
+  
+  .shadow-back-button {
+	box-shadow: inset 4px 4px 8px 1px rgba(0,0,0,0.2), inset -4px -4px 8px 1px rgba(255,255,255,0.7);
+	width: 6vh;
+	height: 6vh;
+	display: flex;
+	align-items: 'center';
+	border-radius: 50%;
+  }
+  
+  .shadow-update-button {
+	  box-shadow: -10px -10px 20px rgba(255, 255, 255, 0.7), 10px 10px 20px rgba(0, 0, 0, 0.15) !important;
+	  border-radius: 3vh !important;
+	  font-family: "Google Sans", sans-serif !important;
+	  font-size: 2vh !important;
+	  text-transform: none !important;
+	  width: 17vh;
+	  height: 5.5vh;
+	  background-color: #FFFFFF !important;
+  }
+  
+  .tool-bar {
+	justify-content: 'space-between';
+	padding: 8vh 0 2vh 0 !important;
+	width: 100%;
+  }
+
+  .App {
+	text-align: center;
+  }
+  
+  .App-logo {
+	height: 40vmin;
+	pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+	  animation: App-logo-spin infinite 20s linear;
+	}
+  }
+  
+  .App-header {
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
+  }
+  
+  .App-link {
+	color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(360deg);
+	}
+  }
+  
